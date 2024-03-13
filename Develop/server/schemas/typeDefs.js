@@ -1,5 +1,5 @@
 const typeDefs = `
-input Bookinput {
+input BookInput {
     authors: [String]
     description: String
     title: String
@@ -26,6 +26,11 @@ type Auth {
     token: ID!
     user: User!
 }
+
+type Query {
+    me: User
+}
+
 type Mutation {
     login(email: String!, password: String!): Auth
     addUser(username: String!, email: String!, password: String!): Auth
