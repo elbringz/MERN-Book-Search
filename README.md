@@ -8,6 +8,7 @@ MIT
 
 ## Credits
 I used the MERN module in the class repository as an example which helped me understand how to refactor the code.
+I also used the source code from https://github.com/coding-boot-camp/solid-broccoli
 
 ## Screenshot
 ![screenshot of webpage](Develop/screenshot/localhost_3000_.png)
