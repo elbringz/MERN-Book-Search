@@ -20,7 +20,7 @@ const SavedBooks = () => {
   const {loading, data} = useQuery(QUERY_GET_ME, {
     variables: {_id: user.data._id}
   });
-  const [removeBook, {error}] = userMutation(REMOVE_BOOK);
+  const [removeBook, {error}] = useMutation(REMOVE_BOOK);
   const userData = data?.me || {};
   
 
@@ -46,6 +46,7 @@ const SavedBooks = () => {
 
       // upon success, remove book's id from localStorage
       removeBookId(bookId);
+      window.location.reload();
     } catch (err) {
       console.error(err);
     }
